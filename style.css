@@ -3,10 +3,15 @@ html {
   margin: auto;
   font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
   header {
-    p {
+    & p {
       line-height: 1vh
     }
-    
+    & ul {
+      padding: unset;
+      li {
+        display: inline;
+    }
+}
   }
   section {
     @media (min-width: 30em) {
