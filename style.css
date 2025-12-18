@@ -1,17 +1,31 @@
-html {
-  width: 90vw;
-  margin: auto;
+:root {
+  color-scheme: light dark;
+}
+body {
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #223a2c);
+}
+
+body {
+  width: 80lvw;
+  margin: 5lvh auto;
   font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
   header {
+    display: flex;
     & p {
-      line-height: 1vh
+      line-height: 1vh;
     }
+  }
+  navigation {
     & ul {
       padding: unset;
-      li {
+      > li {
         display: inline;
+      }
+      > li::after {
+        content: " ";
+      }
     }
-}
   }
   section {
     @media (min-width: 30em) {
@@ -21,7 +35,7 @@ html {
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 2em;
       div {
-
+        text-align: justify;
       }
       .launch-blurb {
         grid-column: 1 / span 2;
