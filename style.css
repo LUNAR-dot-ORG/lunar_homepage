@@ -9,15 +9,17 @@ html {
     
   }
   section {
-    display: grid;
-    align-items: top;
-    justify-self: center;
-    grid-template-columns: 1fr 1fr;
-    div {
+    @media (min-width: 30em) {
+      display: grid;
+      align-items: top;
+      justify-self: center;
+      grid-template-columns: 1fr 1fr;
+      div {
 
-    }
-    .launch-blurb {
-      grid-column: 1 / span 2;
+      }
+      .launch-blurb {
+        grid-column: 1 / span 2;
+      }
     }
   }
 }
