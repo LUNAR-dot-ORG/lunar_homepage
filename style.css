@@ -28,7 +28,7 @@ body {
     }
   }
   section {
-    @media (min-width: 30em) {
+    @media (min-width: 20em) {
       display: grid;
       align-items: top;
       justify-self: center;
