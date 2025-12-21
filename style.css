@@ -25,6 +25,21 @@ body {
       margin: 0 auto;
       line-height: 1.5rem;
     }
+    p + figure {
+      margin-top: 1em;
+    }
+    figure {
+      margin: 0 auto 1em;
+      figcaption {        
+        margin: 0 auto;
+        font-size: smaller;
+        text-align: center;
+        max-width: 30ch;
+      }
+    }
+  }
+  address {
+    margin: 0 auto 1em;
   }
   div#about {
     grid-area: about;
@@ -34,6 +49,11 @@ body {
   }
   div#flying {
     grid-area: flying;
+  }
+  & figure img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
   }
   header {
     grid-area: header;
